@@ -13,7 +13,7 @@ class Trainer:
     
     
 class Monster:
-    def __init__(self, species, ivs, moves, evs, ability):
+    def __init__(self, species, ivs=[0,0,0,0,0,0], moves, evs=[0,0,0,0,0,0], ability):
         self.species = species
         self.ivs = ivs
         self.moves = moves
