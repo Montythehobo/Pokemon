@@ -56,7 +56,11 @@ class Monster: #Defines the pokémon class and their attributes
         for line in f:
             if(line.strip() == self.species):
                 for ty in range (0,2):
-                    type.append(next(f).strip())
+                    temp_type = next(f)
+                    if temp_type != '\n':
+                        type.append(temp_type.strip())
+                    else:
+                        break
                 break
         print(type)
         
